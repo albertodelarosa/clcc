@@ -27,8 +27,10 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 # Use rspec for testing
 gem 'rspec-rails'
-
+# Use bootstrap for front-end framework
 gem 'bootstrap-sass', '~> 3.3.3'
+# User activeadmin for admin
+gem 'activeadmin', github: 'activeadmin'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
