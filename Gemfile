@@ -31,6 +31,7 @@ gem 'rspec-rails'
 gem 'bootstrap-sass', '~> 3.3.3'
 # User activeadmin for admin
 gem 'activeadmin', github: 'activeadmin'
+gem 'devise'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
