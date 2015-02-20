@@ -1,0 +1,11 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Chicano Legacy Car Club
+    = stylesheet_link_tag    'welcome', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'welcome', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    /= render "utilites/header/welcome"
+    = yield
