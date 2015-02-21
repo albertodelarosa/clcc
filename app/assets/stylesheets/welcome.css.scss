@@ -1,11 +1,10 @@
  //= require_self
+ //= require_tree ./theme
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
 body {
-  background: #AD8C6B;
-  background-image: url('welcome-bg.png');
   background-repeat: repeat-y;
   background-attachment: fixed;
   background-position: center;
