@@ -1,0 +1,24 @@
+@import "variables";
+
+.breadcrumb {
+  padding: 8px 15px;
+  margin-bottom: 21px;
+  list-style: none;
+  background-color: #464545;
+  border-radius: 4px;
+}
+.breadcrumb > li {
+  display: inline-block;
+}
+.breadcrumb > li + li:before {
+  content: "/\00a0";
+  padding: 0 5px;
+  color: #ffffff;
+}
+.breadcrumb > .active {
+  color: #999999;
+}
+.breadcrumb a {
+  color: #fff;
+}
+
