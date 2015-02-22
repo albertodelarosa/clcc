@@ -35,6 +35,9 @@ gem 'bootstrap-sass', '~> 3.3.3'
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
 
+#Use omniauth for social media login
+gem 'omniauth-facebook'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
