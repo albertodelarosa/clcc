@@ -660,4 +660,8 @@ fieldset[disabled] .navbar-chicanolegacy .btn-link:focus {
   color: #cccccc;
 }
 
-
+.navbar-chicanolegacy .navbar-nav {
+  .dropdown-menu.dropdown-menu-right {
+    padding: 10px;
+  }
+}
