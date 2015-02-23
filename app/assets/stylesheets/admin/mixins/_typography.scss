@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Century Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Century Gothic'), local('CenturyGothic-Regular'), url(font_path('century-gothic.tiff')) format('tiff');
+}
+
+@mixin sans-family {
+  font-family: "Century Gothic", Arial, sans-serif;
+}

@@ -1,0 +1,97 @@
+// Variables used throughout Active Admin.
+// They can be overridden by prepending your own
+// to 'app/assets/stylesheets/admin.css.scss'.
+@import "../../theme/cl_variables";
+
+// Colors
+$body-background-color: $cl-bwn-pale-pastel-primary-3 !default;
+$primary-color: $cl-tan1 !default;
+$secondary-color: $cl-tan2 !default;
+$text-color: #323537 !default;
+$link-color: $cl-tan2 !default;
+$section-header-text-color: $primary-color !default;
+$current-menu-item-background: lighten($primary-color, 12%) !default;
+$hover-menu-item-background: lighten($primary-color, 12%) !default;
+$table-stripe-color: lighten($primary-color, 57%) !default;
+$table-selected-color: #d9e4ec !default;
+$error-color: #932419 !default;
+$blank-slate-primary-color: $primary-color !default;
+$breadcrumbs-color: #8a949e !default;
+$breadcrumbs-separator-color: #aab2ba !default;
+$required-field-marker-color: #aaa !default;
+$form-label-color: $section-header-text-color !default;
+$page-header-text-color: #cdcdcd !default;
+
+// Sizes
+$border-width: 1px !default;
+$horizontal-page-margin: 30px !default;
+$sidebar-width: 270px !default;
+$cell-padding: 5px 10px 3px 10px !default;
+$cell-horizontal-padding: 12px !default;
+$section-padding: 15px !default;
+$text-input-horizontal-padding: 10px !default;
+$text-input-total-padding: $text-input-horizontal-padding * 2 + $border-width * 2;
+
+$blank-slate-border: 1px dashed #DADADA !default;
+
+/*
+$cl-tan0: #ECD19A;
+$cl-tan1: #FFF7E6;
+$cl-tan2: #FFEDC9;
+$cl-tan3: #C5A462;
+$cl-tan4: #A07E37;
+$cl-tan-rgba0: rgba(236,209,154,1);
+$cl-tan-rgba1: rgba(255,247,230,1);
+$cl-tan-rgba2: rgba(255,237,201,1);
+$cl-tan-rgba3: rgba(197,164, 98,1);
+$cl-tan-rgba4: rgba(160,126, 55,1);
+
+$cl-bwn0: #663300;
+$cl-bwn1: #B37436;
+$cl-bwn2: #8D5116;
+$cl-bwn3: #412000;
+$cl-bwn4: #201000;
+$cl-bwn-rgba0: rgba(102, 51,  0,1);
+$cl-bwn-rgba1: rgba(179,116, 54,1);
+$cl-bwn-rgba2: rgba(141, 81, 22,1);
+$cl-bwn-rgba3: rgba( 65, 32,  0,1);
+$cl-bwn-rgba4: rgba( 32, 16,  0,1);
+
+
+$cl-bwn-pale-pastel-primary-0: #AD8C6B;
+$cl-bwn-pale-pastel-primary-1: #FBE7D4;
+$cl-bwn-pale-pastel-primary-2: #D0B498;
+$cl-bwn-pale-pastel-primary-3: #8A6A4A;
+$cl-bwn-pale-pastel-primary-4: #724E29;
+
+$cl-bwn-pale-pastel-secondary-1-0: #4E5676;
+$cl-bwn-pale-pastel-secondary-1-1: #9398AA;
+$cl-bwn-pale-pastel-secondary-1-2: #6C738D;
+$cl-bwn-pale-pastel-secondary-1-3: #373F5E;
+$cl-bwn-pale-pastel-secondary-1-4: #222B4E;
+
+$cl-bwn-pale-pastel-secondary-2-0: #50825D;
+$cl-bwn-pale-pastel-secondary-2-1: #9FBCA6;
+$cl-bwn-pale-pastel-secondary-2-2: #729B7D;
+$cl-bwn-pale-pastel-secondary-2-3: #376744;
+$cl-bwn-pale-pastel-secondary-2-4: #1F562D;
+
+$cl-bwn-pale-pastel-rgba-primary-0: rgba(173,140,107,1);
+$cl-bwn-pale-pastel-rgba-primary-1: rgba(251,231,212,1);
+$cl-bwn-pale-pastel-rgba-primary-2: rgba(208,180,152,1);
+$cl-bwn-pale-pastel-rgba-primary-3: rgba(138,106, 74,1);
+$cl-bwn-pale-pastel-rgba-primary-4: rgba(114, 78, 41,1);
+
+$cl-bwn-pale-pastel-rgba-secondary-1-0: rgba( 78, 86,118,1);
+$cl-bwn-pale-pastel-rgba-secondary-1-1: rgba(147,152,170,1);
+$cl-bwn-pale-pastel-rgba-secondary-1-2: rgba(108,115,141,1);
+$cl-bwn-pale-pastel-rgba-secondary-1-3: rgba( 55, 63, 94,1);
+$cl-bwn-pale-pastel-rgba-secondary-1-4: rgba( 34, 43, 78,1);
+
+$cl-bwn-pale-pastel-rgba-secondary-2-0: rgba( 80,130, 93,1);
+$cl-bwn-pale-pastel-rgba-secondary-2-1: rgba(159,188,166,1);
+$cl-bwn-pale-pastel-rgba-secondary-2-2: rgba(114,155,125,1);
+$cl-bwn-pale-pastel-rgba-secondary-2-3: rgba( 55,103, 68,1);
+$cl-bwn-pale-pastel-rgba-secondary-2-4: rgba( 31, 86, 45,1);
+*/
+

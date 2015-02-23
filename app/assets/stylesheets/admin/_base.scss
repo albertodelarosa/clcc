@@ -1,0 +1,48 @@
+/* Active Admin CSS */
+// Reset Away!
+@include global-reset;
+
+// Partials
+@import "admin/typography";
+@import "admin/header";
+@import "admin/forms";
+@import "admin/components/comments";
+@import "admin/components/flash_messages";
+@import "admin/components/date_picker";
+@import "admin/components/popovers";
+@import "admin/components/tables";
+@import "admin/components/batch_actions";
+@import "admin/components/modal_dialog";
+@import "admin/components/blank_slates";
+@import "admin/components/breadcrumbs";
+@import "admin/components/dropdown_menu";
+@import "admin/components/buttons";
+@import "admin/components/grid";
+@import "admin/components/links";
+@import "admin/components/pagination";
+@import "admin/components/panels";
+@import "admin/components/columns";
+@import "admin/components/scopes";
+@import "admin/components/status_tags";
+@import "admin/components/table_tools";
+@import "admin/components/index_list";
+@import "admin/components/unsupported_browser";
+@import "admin/components/tabs";
+@import "admin/pages/logged_out";
+@import "admin/structure/footer";
+@import "admin/structure/main_structure";
+@import "admin/structure/title_bar";
+
+body {
+  @include sans-family;
+  line-height: 150%;
+  font-size: 72%;
+  background: $cl-bwn-pale-pastel-primary-3;
+  background-image:  image-url('ChicanoLegacy.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0 40px;
+  margin: 0;
+  padding: 0;
+  color: $cl-tan1;
+}

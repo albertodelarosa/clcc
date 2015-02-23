@@ -1,0 +1,43 @@
+@mixin section-header {
+  background-color: $cl-bwn-pale-pastel-primary-3;
+  //@include secondary-gradient;
+  @include text-shadow(black);
+  border: solid 1px $cl-tan0;
+  @include border-colors($cl-tan2, $cl-tan0, $cl-tan3);
+  //box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 0 1px #FFF inset;
+
+  font-size: 1.0em;
+  font-weight: bold;
+  line-height: 18px;
+  margin-bottom: 0.5em;
+  color: $section-header-text-color;
+  @include icon($section-header-text-color, 1.0em);
+
+  padding: 5px 10px 3px 10px;
+}
+
+@mixin section-background {
+  background: rgba(173,140,107,0.75);
+  @include rounded(4px);
+  @include inset-shadow(0,1px,4px, #ddd);
+}
+
+@mixin section {
+  @include section-background;
+  margin-bottom: 20px;
+
+  > h3 {
+    @include section-header;
+
+    .header_action {
+      float: right;
+    }
+  }
+
+  > div { padding: 3px $section-padding $section-padding $section-padding; }
+
+  hr {
+    border: none;
+    border-bottom: 1px solid #E8E8E8;
+  }
+}
