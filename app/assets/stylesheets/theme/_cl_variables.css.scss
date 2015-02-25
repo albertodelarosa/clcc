@@ -27,24 +27,25 @@ $cl-bwn-rgba2: rgba(141, 81, 22,1);
 $cl-bwn-rgba3: rgba( 65, 32,  0,1);
 $cl-bwn-rgba4: rgba( 32, 16,  0,1);
 
-// Pastels
+////////PASTELS//////////
+// brown
 $cl-bwn-pastel-0: #AD8C6B;
 $cl-bwn-pastel-1: #FBE7D4;
 $cl-bwn-pastel-2: #D0B498;
 $cl-bwn-pastel-3: #8A6A4A;
 $cl-bwn-pastel-4: #724E29;
 
-$cl-blue-pastel-0: #4E5676;
-$cl-blue-pastel-1: #9398AA;
-$cl-blue-pastel-2: #6C738D;
-$cl-blue-pastel-3: #373F5E;
-$cl-blue-pastel-4: #222B4E;
+$cl-bwn-pastel-greyish-dark-0: #3D3A37;
+$cl-bwn-pastel-greyish-dark-1: #645E57;
+$cl-bwn-pastel-greyish-dark-2: #4E4945;
+$cl-bwn-pastel-greyish-dark-3: #393531;
+$cl-bwn-pastel-greyish-dark-4: #312A22;
 
-$cl-green-pastel-0: #50825D;
-$cl-green-pastel-1: #9FBCA6;
-$cl-green-pastel-2: #729B7D;
-$cl-green-pastel-3: #376744;
-$cl-green-pastel-4: #1F562D;
+$cl-bwn-pastel-greyish-darkest-0: #272522;
+$cl-bwn-pastel-greyish-darkest-1: #816B55;
+$cl-bwn-pastel-greyish-darkest-2: #584D43;
+$cl-bwn-pastel-greyish-darkest-3: #40352B;
+$cl-bwn-pastel-greyish-darkest-4: #564029;
 
 $cl-bwn-pastel-rgba-0: rgba(173,140,107,1);
 $cl-bwn-pastel-rgba-1: rgba(251,231,212,1);
@@ -52,73 +53,11 @@ $cl-bwn-pastel-rgba-2: rgba(208,180,152,1);
 $cl-bwn-pastel-rgba-3: rgba(138,106, 74,1);
 $cl-bwn-pastel-rgba-4: rgba(114, 78, 41,1);
 
-$cl-blue-pastel-rgba-0: rgba( 78, 86,118,1);
-$cl-blue-pastel-rgba-1: rgba(147,152,170,1);
-$cl-blue-pastel-rgba-2: rgba(108,115,141,1);
-$cl-blue-pastel-rgba-3: rgba( 55, 63, 94,1);
-$cl-blue-pastel-rgba-4: rgba( 34, 43, 78,1);
-
-$cl-green-pastel-rgba-0: rgba( 80,130, 93,1);
-$cl-green-pastel-rgba-1: rgba(159,188,166,1);
-$cl-green-pastel-rgba-2: rgba(114,155,125,1);
-$cl-green-pastel-rgba-3: rgba( 55,103, 68,1);
-$cl-green-pastel-rgba-4: rgba( 31, 86, 45,1);
-
-// darkest grey pastel
-$cl-bwn-pastel-greyish-dark-0: #3D3A37;
-$cl-bwn-pastel-greyish-dark-1: #645E57;
-$cl-bwn-pastel-greyish-dark-2: #4E4945;
-$cl-bwn-pastel-greyish-dark-3: #393531;
-$cl-bwn-pastel-greyish-dark-4: #312A22;
-
-$cl-blue-pastel-greyish-dark-0: #26272A;
-$cl-blue-pastel-greyish-dark-1: #3C3E44;
-$cl-blue-pastel-greyish-dark-2: #2F3135;
-$cl-blue-pastel-greyish-dark-3: #222327;
-$cl-blue-pastel-greyish-dark-4: #191A21;
-
-$cl-green-pastel-greyish-dark-0: #292E2A;
-$cl-green-pastel-greyish-dark-1: #414B44;
-$cl-green-pastel-greyish-dark-2: #333A35;
-$cl-green-pastel-greyish-dark-3: #242B26;
-$cl-green-pastel-greyish-dark-4: #1A251D;
-
 $cl-bwn-pastel-greyish-dark-rgba-0: rgba( 61, 58, 55,1);
 $cl-bwn-pastel-greyish-dark-rgba-1: rgba(100, 94, 87,1);
 $cl-bwn-pastel-greyish-dark-rgba-2: rgba( 78, 73, 69,1);
 $cl-bwn-pastel-greyish-dark-rgba-3: rgba( 57, 53, 49,1);
 $cl-bwn-pastel-greyish-dark-rgba-4: rgba( 49, 42, 34,1);
-
-$cl-blue-pastel-greyish-dark-rgba-0: rgba( 38, 39, 42,1);
-$cl-blue-pastel-greyish-dark-rgba-1: rgba( 60, 62, 68,1);
-$cl-blue-pastel-greyish-dark-rgba-2: rgba( 47, 49, 53,1);
-$cl-blue-pastel-greyish-dark-rgba-3: rgba( 34, 35, 39,1);
-$cl-blue-pastel-greyish-dark-rgba-4: rgba( 25, 26, 33,1);
-
-$cl-green-pastel-greyish-dark-rgba-0: rgba( 41, 46, 42,1);
-$cl-green-pastel-greyish-dark-rgba-1: rgba( 65, 75, 68,1);
-$cl-green-pastel-greyish-dark-rgba-2: rgba( 51, 58, 53,1);
-$cl-green-pastel-greyish-dark-rgba-3: rgba( 36, 43, 38,1);
-$cl-green-pastel-greyish-dark-rgba-4: rgba( 26, 37, 29,1);
-
-// darkest grey pastel
-$cl-bwn-pastel-greyish-darkest-0: #272522;
-$cl-bwn-pastel-greyish-darkest-1: #816B55;
-$cl-bwn-pastel-greyish-darkest-2: #584D43;
-$cl-bwn-pastel-greyish-darkest-3: #40352B;
-$cl-bwn-pastel-greyish-darkest-4: #564029;
-
-$cl-blue-pastel-greyish-darkest-0: #18181B;
-$cl-blue-pastel-greyish-darkest-1: #3D4358;
-$cl-blue-pastel-greyish-darkest-2: #2F323C;
-$cl-blue-pastel-greyish-darkest-3: #1F222B;
-$cl-blue-pastel-greyish-darkest-4: #20253B;
-
-$cl-green-pastel-greyish-darkest-0: #1A1D1B;
-$cl-green-pastel-greyish-darkest-1: #406148;
-$cl-green-pastel-greyish-darkest-2: #324236;
-$cl-green-pastel-greyish-darkest-3: #203024;
-$cl-green-pastel-greyish-darkest-4: #1F4128;
 
 $cl-bwn-pastel-greyish-darkest-rgba-0: rgba( 39, 37, 34,1);
 $cl-bwn-pastel-greyish-darkest-rgba-1: rgba(129,107, 85,1);
@@ -126,11 +65,147 @@ $cl-bwn-pastel-greyish-darkest-rgba-2: rgba( 88, 77, 67,1);
 $cl-bwn-pastel-greyish-darkest-rgba-3: rgba( 64, 53, 43,1);
 $cl-bwn-pastel-greyish-darkest-rgba-4: rgba( 86, 64, 41,1);
 
+//yellow
+$cl-yellow-pastel-0: #AD996B;
+$cl-yellow-pastel-1: #FBEFD4;
+$cl-yellow-pastel-2: #D0BF98;
+$cl-yellow-pastel-3: #8A764A;
+$cl-yellow-pastel-4: #725C29;
+
+$cl-yellow-pastel-greyish-dark-0: #3D3B37;
+$cl-yellow-pastel-greyish-dark-1: #646057;
+$cl-yellow-pastel-greyish-dark-2: #4E4B45;
+$cl-yellow-pastel-greyish-dark-3: #393731;
+$cl-yellow-pastel-greyish-dark-4: #312D22;
+
+$cl-yellow-pastel-greyish-darkest-0: #272622;
+$cl-yellow-pastel-greyish-darkest-1: #817455;
+$cl-yellow-pastel-greyish-darkest-2: #585143;
+$cl-yellow-pastel-greyish-darkest-3: #403A2B;
+$cl-yellow-pastel-greyish-darkest-4: #564929;
+
+$cl-yellow-pastel-rgba-0: rgba(173,153,107,1);
+$cl-yellow-pastel-rgba-1: rgba(251,239,212,1);
+$cl-yellow-pastel-rgba-2: rgba(208,191,152,1);
+$cl-yellow-pastel-rgba-3: rgba(138,118, 74,1);
+$cl-yellow-pastel-rgba-4: rgba(114, 92, 41,1);
+
+$cl-yellow-pastel-greyish-dark-rgba-0: rgba( 61, 59, 55,1);
+$cl-yellow-pastel-greyish-dark-rgba-1: rgba(100, 96, 87,1);
+$cl-yellow-pastel-greyish-dark-rgba-2: rgba( 78, 75, 69,1);
+$cl-yellow-pastel-greyish-dark-rgba-3: rgba( 57, 55, 49,1);
+$cl-yellow-pastel-greyish-dark-rgba-4: rgba( 49, 45, 34,1);
+
+$cl-yellow-pastel-greyish-darkest-rgba-0: rgba( 39, 38, 34,1);
+$cl-yellow-pastel-greyish-darkest-rgba-1: rgba(129,116, 85,1);
+$cl-yellow-pastel-greyish-darkest-rgba-2: rgba( 88, 81, 67,1);
+$cl-yellow-pastel-greyish-darkest-rgba-3: rgba( 64, 58, 43,1);
+$cl-yellow-pastel-greyish-darkest-rgba-4: rgba( 86, 73, 41,1);
+
+//red
+$cl-red-pastel-0: #AD736B;
+$cl-red-pastel-1: #FBD8D4;
+$cl-red-pastel-2: #D09E98;
+$cl-red-pastel-3: #8A514A;
+$cl-red-pastel-4: #723229;
+
+$cl-red-pastel-greyish-dark-0: #3D3837;
+$cl-red-pastel-greyish-dark-1: #645857;
+$cl-red-pastel-greyish-dark-2: #4E4645;
+$cl-red-pastel-greyish-dark-3: #393231;
+$cl-red-pastel-greyish-dark-4: #312422;
+
+$cl-red-pastel-greyish-darkest-0: #272322;
+$cl-red-pastel-greyish-darkest-1: #815A55;
+$cl-red-pastel-greyish-darkest-2: #584543;
+$cl-red-pastel-greyish-darkest-3: #402E2B;
+$cl-red-pastel-greyish-darkest-4: #562E29;
+
+$cl-red-pastel-rgba-0: rgba(173,115,107,1);
+$cl-red-pastel-rgba-1: rgba(251,216,212,1);
+$cl-red-pastel-rgba-2: rgba(208,158,152,1);
+$cl-red-pastel-rgba-3: rgba(138, 81, 74,1);
+$cl-red-pastel-rgba-4: rgba(114, 50, 41,1);
+
+$cl-red-pastel-greyish-dark-rgba-0: rgba( 61, 56, 55,1);
+$cl-red-pastel-greyish-dark-rgba-1: rgba(100, 88, 87,1);
+$cl-red-pastel-greyish-dark-rgba-2: rgba( 78, 70, 69,1);
+$cl-red-pastel-greyish-dark-rgba-3: rgba( 57, 50, 49,1);
+$cl-red-pastel-greyish-dark-rgba-4: rgba( 49, 36, 34,1);
+
+$cl-red-pastel-greyish-darkest-rgba-0: rgba( 39, 35, 34,1);
+$cl-red-pastel-greyish-darkest-rgba-1: rgba(129, 90, 85,1);
+$cl-red-pastel-greyish-darkest-rgba-2: rgba( 88, 69, 67,1);
+$cl-red-pastel-greyish-darkest-rgba-3: rgba( 64, 46, 43,1);
+$cl-red-pastel-greyish-darkest-rgba-4: rgba( 86, 46, 41,1);
+
+//blue
+$cl-blue-pastel-0: #4E5676;
+$cl-blue-pastel-1: #9398AA;
+$cl-blue-pastel-2: #6C738D;
+$cl-blue-pastel-3: #373F5E;
+$cl-blue-pastel-4: #222B4E;
+
+$cl-blue-pastel-greyish-dark-0: #26272A;
+$cl-blue-pastel-greyish-dark-1: #3C3E44;
+$cl-blue-pastel-greyish-dark-2: #2F3135;
+$cl-blue-pastel-greyish-dark-3: #222327;
+$cl-blue-pastel-greyish-dark-4: #191A21;
+
+$cl-blue-pastel-greyish-darkest-0: #18181B;
+$cl-blue-pastel-greyish-darkest-1: #3D4358;
+$cl-blue-pastel-greyish-darkest-2: #2F323C;
+$cl-blue-pastel-greyish-darkest-3: #1F222B;
+$cl-blue-pastel-greyish-darkest-4: #20253B;
+
+$cl-blue-pastel-rgba-0: rgba( 78, 86,118,1);
+$cl-blue-pastel-rgba-1: rgba(147,152,170,1);
+$cl-blue-pastel-rgba-2: rgba(108,115,141,1);
+$cl-blue-pastel-rgba-3: rgba( 55, 63, 94,1);
+$cl-blue-pastel-rgba-4: rgba( 34, 43, 78,1);
+
+$cl-blue-pastel-greyish-dark-rgba-0: rgba( 38, 39, 42,1);
+$cl-blue-pastel-greyish-dark-rgba-1: rgba( 60, 62, 68,1);
+$cl-blue-pastel-greyish-dark-rgba-2: rgba( 47, 49, 53,1);
+$cl-blue-pastel-greyish-dark-rgba-3: rgba( 34, 35, 39,1);
+$cl-blue-pastel-greyish-dark-rgba-4: rgba( 25, 26, 33,1);
+
 $cl-blue-pastel-greyish-darkest-rgba-0: rgba( 24, 24, 27,1);
 $cl-blue-pastel-greyish-darkest-rgba-1: rgba( 61, 67, 88,1);
 $cl-blue-pastel-greyish-darkest-rgba-2: rgba( 47, 50, 60,1);
 $cl-blue-pastel-greyish-darkest-rgba-3: rgba( 31, 34, 43,1);
 $cl-blue-pastel-greyish-darkest-rgba-4: rgba( 32, 37, 59,1);
+
+//green
+$cl-green-pastel-0: #50825D;
+$cl-green-pastel-1: #9FBCA6;
+$cl-green-pastel-2: #729B7D;
+$cl-green-pastel-3: #376744;
+$cl-green-pastel-4: #1F562D;
+
+$cl-green-pastel-greyish-dark-0: #292E2A;
+$cl-green-pastel-greyish-dark-1: #414B44;
+$cl-green-pastel-greyish-dark-2: #333A35;
+$cl-green-pastel-greyish-dark-3: #242B26;
+$cl-green-pastel-greyish-dark-4: #1A251D;
+
+$cl-green-pastel-greyish-darkest-0: #1A1D1B;
+$cl-green-pastel-greyish-darkest-1: #406148;
+$cl-green-pastel-greyish-darkest-2: #324236;
+$cl-green-pastel-greyish-darkest-3: #203024;
+$cl-green-pastel-greyish-darkest-4: #1F4128;
+
+$cl-green-pastel-rgba-0: rgba( 80,130, 93,1);
+$cl-green-pastel-rgba-1: rgba(159,188,166,1);
+$cl-green-pastel-rgba-2: rgba(114,155,125,1);
+$cl-green-pastel-rgba-3: rgba( 55,103, 68,1);
+$cl-green-pastel-rgba-4: rgba( 31, 86, 45,1);
+
+$cl-green-pastel-greyish-dark-rgba-0: rgba( 41, 46, 42,1);
+$cl-green-pastel-greyish-dark-rgba-1: rgba( 65, 75, 68,1);
+$cl-green-pastel-greyish-dark-rgba-2: rgba( 51, 58, 53,1);
+$cl-green-pastel-greyish-dark-rgba-3: rgba( 36, 43, 38,1);
+$cl-green-pastel-greyish-dark-rgba-4: rgba( 26, 37, 29,1);
 
 $cl-green-pastel-greyish-darkest-rgba-0: rgba( 26, 29, 27,1);
 $cl-green-pastel-greyish-darkest-rgba-1: rgba( 64, 97, 72,1);
