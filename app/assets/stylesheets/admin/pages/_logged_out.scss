@@ -1,5 +1,5 @@
 body.logged_out {
-  background: $cl-bwn-pale-pastel-primary-3;
+  background: $cl-bwn-pastel-3;
   background-image:  image-url('ChicanoLegacy.png');
   background-repeat: no-repeat;
   background-size: 100%;
@@ -9,7 +9,7 @@ body.logged_out {
     margin: 70px auto;
     #active_admin_content {
       @include shadow;
-      background: $cl-bwn-pale-pastel-primary-0;
+      background: $cl-bwn-pastel-0;
       color: $cl-tan0;
       padding: 13px 30px;
     }
@@ -23,7 +23,7 @@ body.logged_out {
     border: none;
     //color: #fff;
     margin: -13px -30px 20px -30px;
-    background: $cl-bwn-pale-pastel-primary-0;
+    background: $cl-bwn-pastel-0;
     color: $cl-tan2;
 
   }

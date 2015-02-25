@@ -44,11 +44,11 @@ table.index_table {
 
   }
 
-  tr.odd  td { background: $cl-bwn-pale-pastel-primary-2; }
-  tr.even td { background: $cl-bwn-pale-pastel-primary-0; }
+  tr.odd  td { background: $cl-bwn-pastel-2; }
+  tr.even td { background: $cl-bwn-pastel-0; }
 
   tr.selected td {
-    background: $cl-bwn-pale-pastel-primary-4;
+    background: $cl-bwn-pastel-4;
   }
 
   td {
@@ -68,7 +68,7 @@ table.index_table {
     background: none;
     color: $primary-color;
     @include no-shadow;
-    @include text-shadow($cl-bwn-pale-pastel-primary-4);
+    @include text-shadow($cl-bwn-pastel-4);
     text-transform: uppercase;
     border-bottom: 1px solid red;
   }
@@ -96,11 +96,11 @@ table.index_table {
     padding-left: 0;
     text-transform: uppercase;
     color: $primary-color;
-    @include text-shadow($cl-bwn-pale-pastel-primary-4);
+    @include text-shadow($cl-bwn-pastel-4);
   }
   td {
     .empty {
-      color: $cl-bwn-pale-pastel-primary-2;
+      color: $cl-bwn-pastel-2;
       font-size: 0.8em;
       text-transform: uppercase;
       letter-spacing: 0.2em;

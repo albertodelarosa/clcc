@@ -11,10 +11,10 @@ body.logged_in {
     position: relative;
 
     &.flash_notice {
-      @include gradient($cl-bwn-pale-pastel-secondary-2-0, $cl-bwn-pale-pastel-secondary-2-2);
-      @include text-shadow($cl-bwn-pale-pastel-secondary-2-1);
-      border-bottom: 1px solid $cl-bwn-pale-pastel-secondary-2-4;
-      color: $cl-bwn-pale-pastel-secondary-2-4;
+      @include gradient($cl-green-pastel-0, $cl-green-pastel-2);
+      @include text-shadow($cl-green-pastel-1);
+      border-bottom: 1px solid $cl-green-pastel-4;
+      color: $cl-green-pastel-4;
     }
     &.flash_error {
       @include gradient(#f5e4e4, #f1dcdc);
@@ -27,9 +27,9 @@ body.logged_in {
 body.logged_out {
   .flash {
     @include shadow(0 1px 2px rgba(78, 86,118, 0.37));
-    @include text-shadow($cl-bwn-pale-pastel-secondary-1-3);
-    background: $cl-bwn-pale-pastel-secondary-1-0;
-    color: $cl-bwn-pale-pastel-secondary-1-1;
+    @include text-shadow($cl-blue-pastel-3);
+    background: $cl-blue-pastel-0;
+    color: $cl-blue-pastel-1;
     padding: 10px;
     border: 1px solid #373F5E;
     border-radius: 5px;

@@ -2,7 +2,7 @@
 //= depend_on_asset "admin/nested_menu_arrow_dark.gif"
 // ----------------------------------- Header
 #header {
-  background: $cl-bwn-pale-pastel-primary-3;
+  background: $cl-bwn-pastel-3;
   color: $cl-tan1;
   display: table;
   height: 20px;
@@ -55,7 +55,7 @@
 
     & > #current_user > a:hover,
     & > #logout > a:hover {
-      color: $cl-bwn-pale-pastel-primary-3;
+      color: $cl-bwn-pastel-3;
     }
 
     & > li {
@@ -75,7 +75,7 @@
 
       &.current > a {
         background: $cl-tan1;
-        color: $cl-bwn-pale-pastel-primary-3;
+        color: $cl-bwn-pastel-3;
       }
 
       &.has_nested > a {
@@ -90,7 +90,7 @@
 
       &:hover > a {
         background: $cl-tan1;
-        color: $cl-bwn-pale-pastel-primary-3;
+        color: $cl-bwn-pastel-3;
       }
 
       &.has_nested:hover > a {
