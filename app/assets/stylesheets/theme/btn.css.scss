@@ -1,51 +1,7 @@
 @import "variables";
+@import "mixins/buttons";
 
-.btn {
-  display: inline-block;
-  margin-bottom: 0;
-  font-weight: normal;
-  text-align: center;
-  vertical-align: middle;
-  -ms-touch-action: manipulation;
-      touch-action: manipulation;
-  cursor: pointer;
-  background-image: none;
-  border: 1px solid transparent;
-  white-space: nowrap;
-  padding: 10px 15px;
-  font-size: 15px;
-  line-height: 1.42857143;
-  border-radius: 4px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.btn:focus,
-.btn:active:focus,
-.btn.active:focus,
-.btn.focus,
-.btn:active.focus,
-.btn.active.focus {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-.btn:hover,
-.btn:focus,
-.btn.focus {
-  color: #ffffff;
-  text-decoration: none;
-}
-.btn:active,
-.btn.active {
-  outline: 0;
-  background-image: none;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-}
-.btn.disabled,
-.btn[disabled],
+.btn {@include basic-button;}
 fieldset[disabled] .btn {
   cursor: not-allowed;
   pointer-events: none;
@@ -54,6 +10,7 @@ fieldset[disabled] .btn {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+// .btn-default
 .btn-default {
   color: #ffffff;
   background-color: #464545;
@@ -99,227 +56,134 @@ fieldset[disabled] .btn-default.active {
   color: #464545;
   background-color: #ffffff;
 }
+
+// .btn-primary
 .btn-primary {
-  color: #ffffff;
-  background-color: #375a7f;
-  border-color: #375a7f;
+  @include button-colors(
+    $brand-primary, $brand-primary-border, $brand-primary-color,
+    $brand-primary-hover, $brand-primary-hover-border, $brand-primary-hover-color,
+    $brand-primary-focus, $brand-primary-focus-border, $brand-primary-focus-color,
+    $brand-primary-active, $brand-primary-active-border, $brand-primary-active-color,
+    $brand-primary-visited, $brand-primary-visited-border, $brand-primary-visited-color,
+    $brand-primary-disabled, $brand-primary-disabled-border, $brand-primary-disabled-color
+    );
 }
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary.focus,
-.btn-primary:active,
-.btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
-  color: #ffffff;
-  background-color: #28415b;
-  border-color: #253c54;
-}
-.btn-primary:active,
-.btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
-  background-image: none;
-}
-.btn-primary.disabled,
-.btn-primary[disabled],
 fieldset[disabled] .btn-primary,
-.btn-primary.disabled:hover,
-.btn-primary[disabled]:hover,
 fieldset[disabled] .btn-primary:hover,
-.btn-primary.disabled:focus,
-.btn-primary[disabled]:focus,
 fieldset[disabled] .btn-primary:focus,
-.btn-primary.disabled.focus,
-.btn-primary[disabled].focus,
 fieldset[disabled] .btn-primary.focus,
-.btn-primary.disabled:active,
-.btn-primary[disabled]:active,
 fieldset[disabled] .btn-primary:active,
-.btn-primary.disabled.active,
-.btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #375a7f;
-  border-color: #375a7f;
+  background-color: $cl-tan-pastel-med-lite-0;
+  border-color: $cl-tan-pastel-med-lite-4;
 }
-.btn-primary .badge {
-  color: #375a7f;
-  background-color: #ffffff;
-}
-.btn-success {
-  color: #ffffff;
-  background-color: #00bc8c;
-  border-color: #00bc8c;
-}
-.btn-success:hover,
-.btn-success:focus,
-.btn-success.focus,
-.btn-success:active,
-.btn-success.active,
-.open > .dropdown-toggle.btn-success {
-  color: #ffffff;
-  background-color: #008966;
-  border-color: #007f5e;
-}
-.btn-success:active,
-.btn-success.active,
-.open > .dropdown-toggle.btn-success {
+.open > .dropdown-toggle.btn-primary {
+  background-color: $brand-primary-hover;
+  border-color: $cl-bwn-pastel-3;
   background-image: none;
+  color: $brand-primary-hover-color;
 }
-.btn-success.disabled,
-.btn-success[disabled],
+
+
+// .btn-success
+.btn-success {
+  @include button-colors(
+    $brand-success, $brand-success-border, $brand-success-color,
+    $brand-success-hover, $brand-success-hover-border, $brand-success-hover-color,
+    $brand-success-focus, $brand-success-focus-border, $brand-success-focus-color,
+    $brand-success-active, $brand-success-active-border, $brand-success-active-color,
+    $brand-success-visited, $brand-success-visited-border, $brand-success-visited-color,
+    $brand-success-disabled, $brand-success-disabled-border, $brand-success-disabled-color
+    );
+}
 fieldset[disabled] .btn-success,
-.btn-success.disabled:hover,
-.btn-success[disabled]:hover,
 fieldset[disabled] .btn-success:hover,
-.btn-success.disabled:focus,
-.btn-success[disabled]:focus,
 fieldset[disabled] .btn-success:focus,
-.btn-success.disabled.focus,
-.btn-success[disabled].focus,
 fieldset[disabled] .btn-success.focus,
-.btn-success.disabled:active,
-.btn-success[disabled]:active,
 fieldset[disabled] .btn-success:active,
-.btn-success.disabled.active,
-.btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
-  background-color: #00bc8c;
-  border-color: #00bc8c;
+  background-color: $brand-success-disabled;
+  border-color: $brand-success-disabled-border;
+  color: $brand-success-disabled-color;
 }
+
 .btn-success .badge {
   color: #00bc8c;
   background-color: #ffffff;
 }
 .btn-info {
-  color: #ffffff;
-  background-color: #3498db;
-  border-color: #3498db;
+  @include button-colors(
+    $brand-info, $brand-info-border, $brand-info-color,
+    $brand-info-hover, $brand-info-hover-border, $brand-info-hover-color,
+    $brand-info-focus, $brand-info-focus-border, $brand-info-focus-color,
+    $brand-info-active, $brand-info-active-border, $brand-info-active-color,
+    $brand-info-visited, $brand-info-visited-border, $brand-info-visited-color,
+    $brand-info-disabled, $brand-info-disabled-border, $brand-info-disabled-color
+    );
 }
-.btn-info:hover,
-.btn-info:focus,
-.btn-info.focus,
-.btn-info:active,
-.btn-info.active,
-.open > .dropdown-toggle.btn-info {
-  color: #ffffff;
-  background-color: #217dbb;
-  border-color: #2077b2;
-}
-.btn-info:active,
-.btn-info.active,
-.open > .dropdown-toggle.btn-info {
-  background-image: none;
-}
-.btn-info.disabled,
-.btn-info[disabled],
 fieldset[disabled] .btn-info,
-.btn-info.disabled:hover,
-.btn-info[disabled]:hover,
 fieldset[disabled] .btn-info:hover,
-.btn-info.disabled:focus,
-.btn-info[disabled]:focus,
 fieldset[disabled] .btn-info:focus,
-.btn-info.disabled.focus,
-.btn-info[disabled].focus,
 fieldset[disabled] .btn-info.focus,
-.btn-info.disabled:active,
-.btn-info[disabled]:active,
 fieldset[disabled] .btn-info:active,
-.btn-info.disabled.active,
-.btn-info[disabled].active,
 fieldset[disabled] .btn-info.active {
-  background-color: #3498db;
-  border-color: #3498db;
+  background-color: $brand-info-disabled;
+  border-color: $brand-info-disabled-border;
+  color: $brand-info-disabled-color;
 }
+
 .btn-info .badge {
   color: #3498db;
   background-color: #ffffff;
 }
+
 .btn-warning {
-  color: #ffffff;
-  background-color: #f39c12;
-  border-color: #f39c12;
+  @include button-colors(
+    $brand-warning, $brand-warning-border, $brand-warning-color,
+    $brand-warning-hover, $brand-warning-hover-border, $brand-warning-hover-color,
+    $brand-warning-focus, $brand-warning-focus-border, $brand-warning-focus-color,
+    $brand-warning-active, $brand-warning-active-border, $brand-warning-active-color,
+    $brand-warning-visited, $brand-warning-visited-border, $brand-warning-visited-color,
+    $brand-warning-disabled, $brand-warning-disabled-border, $brand-warning-disabled-color
+    );
 }
-.btn-warning:hover,
-.btn-warning:focus,
-.btn-warning.focus,
-.btn-warning:active,
-.btn-warning.active,
-.open > .dropdown-toggle.btn-warning {
-  color: #ffffff;
-  background-color: #c87f0a;
-  border-color: #be780a;
-}
-.btn-warning:active,
-.btn-warning.active,
-.open > .dropdown-toggle.btn-warning {
-  background-image: none;
-}
-.btn-warning.disabled,
-.btn-warning[disabled],
 fieldset[disabled] .btn-warning,
-.btn-warning.disabled:hover,
-.btn-warning[disabled]:hover,
 fieldset[disabled] .btn-warning:hover,
-.btn-warning.disabled:focus,
-.btn-warning[disabled]:focus,
 fieldset[disabled] .btn-warning:focus,
-.btn-warning.disabled.focus,
-.btn-warning[disabled].focus,
 fieldset[disabled] .btn-warning.focus,
-.btn-warning.disabled:active,
-.btn-warning[disabled]:active,
 fieldset[disabled] .btn-warning:active,
-.btn-warning.disabled.active,
-.btn-warning[disabled].active,
 fieldset[disabled] .btn-warning.active {
-  background-color: #f39c12;
-  border-color: #f39c12;
+  background-color: $brand-warning-disabled;
+  border-color: $brand-warning-disabled-border;
+  color: $brand-warning-disabled-color;
 }
+
 .btn-warning .badge {
   color: #f39c12;
   background-color: #ffffff;
 }
+// danger
 .btn-danger {
-  color: #ffffff;
-  background-color: #e74c3c;
-  border-color: #e74c3c;
+  @include button-colors(
+    $brand-danger, $brand-danger-border, $brand-danger-color,
+    $brand-danger-hover, $brand-danger-hover-border, $brand-danger-hover-color,
+    $brand-danger-focus, $brand-danger-focus-border, $brand-danger-focus-color,
+    $brand-danger-active, $brand-danger-active-border, $brand-danger-active-color,
+    $brand-danger-visited, $brand-danger-visited-border, $brand-danger-visited-color,
+    $brand-danger-disabled, $brand-danger-disabled-border, $brand-danger-disabled-color
+    );
 }
-.btn-danger:hover,
-.btn-danger:focus,
-.btn-danger.focus,
-.btn-danger:active,
-.btn-danger.active,
-.open > .dropdown-toggle.btn-danger {
-  color: #ffffff;
-  background-color: #d62c1a;
-  border-color: #cd2a19;
-}
-.btn-danger:active,
-.btn-danger.active,
-.open > .dropdown-toggle.btn-danger {
-  background-image: none;
-}
-.btn-danger.disabled,
-.btn-danger[disabled],
 fieldset[disabled] .btn-danger,
-.btn-danger.disabled:hover,
-.btn-danger[disabled]:hover,
 fieldset[disabled] .btn-danger:hover,
-.btn-danger.disabled:focus,
-.btn-danger[disabled]:focus,
 fieldset[disabled] .btn-danger:focus,
-.btn-danger.disabled.focus,
-.btn-danger[disabled].focus,
 fieldset[disabled] .btn-danger.focus,
-.btn-danger.disabled:active,
-.btn-danger[disabled]:active,
 fieldset[disabled] .btn-danger:active,
-.btn-danger.disabled.active,
-.btn-danger[disabled].active,
 fieldset[disabled] .btn-danger.active {
-  background-color: #e74c3c;
-  border-color: #e74c3c;
+  background-color: $brand-danger-disabled;
+  border-color: $brand-danger-disabled-border;
+  color: $brand-danger-disabled-color;
 }
+
 .btn-danger .badge {
   color: #e74c3c;
   background-color: #ffffff;

@@ -1,3 +1,6 @@
+@import "bootstrap-sprockets";
+//@import "bootstrap";
+
 @font-face {
   font-family: 'Century Gothic';
   font-style: normal;
@@ -27,6 +30,15 @@ $cl-bwn-rgba2: rgba(141, 81, 22,1);
 $cl-bwn-rgba3: rgba( 65, 32,  0,1);
 $cl-bwn-rgba4: rgba( 32, 16,  0,1);
 
+
+
+$cl-tan-pastel-med-lite-0: #99958E;
+$cl-tan-pastel-med-lite-1: #BDB198;
+$cl-tan-pastel-med-lite-2: #89847A;
+$cl-tan-pastel-med-lite-3: #7B7568;
+$cl-tan-pastel-med-lite-4: #6C6556;
+
+
 ////////PASTELS//////////
 // brown
 $cl-bwn-pastel-0: #AD8C6B;
@@ -47,11 +59,17 @@ $cl-bwn-pastel-greyish-darkest-2: #584D43;
 $cl-bwn-pastel-greyish-darkest-3: #40352B;
 $cl-bwn-pastel-greyish-darkest-4: #564029;
 
-$cl-bwn-pastel-rgba-0: rgba(173,140,107,1);
-$cl-bwn-pastel-rgba-1: rgba(251,231,212,1);
-$cl-bwn-pastel-rgba-2: rgba(208,180,152,1);
-$cl-bwn-pastel-rgba-3: rgba(138,106, 74,1);
-$cl-bwn-pastel-rgba-4: rgba(114, 78, 41,1);
+$cl-bwn-pastel-rgb-0: rgb(173,140,107);
+$cl-bwn-pastel-rgb-1: rgb(251,231,212);
+$cl-bwn-pastel-rgb-2: rgb(208,180,152);
+$cl-bwn-pastel-rgb-3: rgb(138,106, 74);
+$cl-bwn-pastel-rgb-4: rgb(114, 78, 41);
+
+$cl-bwn-pastel-rgba-0: rgba($cl-bwn-pastel-rgb-0,1);
+$cl-bwn-pastel-rgba-1: rgba($cl-bwn-pastel-rgb-1,1);
+$cl-bwn-pastel-rgba-2: rgba($cl-bwn-pastel-rgb-2,1);
+$cl-bwn-pastel-rgba-3: rgba($cl-bwn-pastel-rgb-3,1);
+$cl-bwn-pastel-rgba-4: rgba($cl-bwn-pastel-rgb-4,1);
 
 $cl-bwn-pastel-greyish-dark-rgba-0: rgba( 61, 58, 55,1);
 $cl-bwn-pastel-greyish-dark-rgba-1: rgba(100, 94, 87,1);

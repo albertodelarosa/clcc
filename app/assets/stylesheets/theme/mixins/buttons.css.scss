@@ -1,0 +1,116 @@
+@import "../variables";
+@import "utilities";
+
+@mixin basic-button {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 10px 15px;
+  font-size: 15px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  &:focus,
+  &.focus,
+  &:active:focus,
+  &.active:focus,
+  &:active.focus,
+  &.active.focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+  }
+
+  &:hover,
+  &:focus,
+  &.focus {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  &:active,
+  &.active {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled]{
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 0.65;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+}
+
+@mixin button-colors(
+  $main-bg, $main-border, $main-color,
+  $hover-bg, $hover-border, $hover-color,
+  $focus-bg, $focus-border, $focus-color,
+  $active-bg, $active-border, $active-color,
+  $visited-bg, $visited-border, $visited-color,
+  $disabled-bg, $disabled-border, $disabled-color
+  ) {
+  @include colors($main-bg, $main-border, $main-color);
+
+  &:hover{
+    background-image: none;
+    @include colors($hover-bg, $hover-border, $hover-color);
+  }
+  &:focus,
+  &.focus{
+    background-image: none;
+    @include colors($focus-bg, $focus-border, $focus-color);
+    outline: 5px auto rgba($active-border,0.5);
+  }
+  &:active,
+  &.active {
+    background-image: none;
+    @include colors($active-bg, $active-border, $active-color);
+  }
+  &:visited,
+  &.visited {
+    background-image: none;
+    @include colors($visited-bg, $visited-border, $visited-color);
+  }
+  &.disabled,
+  &[disabled],
+  &.disabled:hover,
+  &[disabled]:hover,
+  &.disabled:focus,
+  &[disabled]:focus,
+  &.disabled.focus,
+  &[disabled].focus,
+  &.disabled:active,
+  &[disabled]:active,
+  &.disabled.active,
+  &[disabled].active{
+    background-image: none;
+    @include colors($disabled-bg, $disabled-border, $disabled-color);
+  }
+  &:active:focus,
+  &.active:focus,
+  &:active.focus,
+  &.active.focus {
+    outline: 5px auto rgba($active-border,0.5);
+  }
+  .badge {
+    color: #375a7f;
+    background-color: #ffffff;
+  }
+
+}
+
+

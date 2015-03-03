@@ -1,7 +1,4 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
-
-@import "bootswatch";
+//@import "bootswatch";
 @import "variables";
 /*!
  * bootswatch v3.3.2
@@ -23,8 +20,8 @@ body {
   font-family: "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 1.42857143;
-  color: #ffffff;
-  background-color: $cl-bwn-pastel-0;
+  color: $text-color;
+  background-color: $body-bg;
   height: 100%;
   margin: 0;
 }
@@ -1640,6 +1637,18 @@ textarea:focus {
 .has-error .input-group-addon {
   border-color: #e74c3c;
 }
+#error_explanation{
+  background-color: $cl-red-pastel-0;
+  padding: 7px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid $cl-red-pastel-3;
+  ul > li {
+    color: $cl-red-pastel-4;
+  }
+}
+
+
 .has-success .help-block,
 .has-success .control-label,
 .has-success .radio,

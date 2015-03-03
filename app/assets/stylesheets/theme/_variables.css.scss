@@ -6,27 +6,147 @@
 //
 //## Gray and brand colors for use across Bootstrap.
 
-$gray-base:              #000;
+$gray-base:              $cl-bwn-pastel-greyish-dark-4;
 $gray-darker:            lighten($gray-base, 13.5%); // #222
-$gray-dark:              #303030;   // #333
-$gray:                   #464545;
-$gray-light:             #999;   // #999
-$gray-lighter:           #EBEBEB; // #eee
+$gray-dark:              $cl-bwn-pastel-greyish-dark-3;   // #333
+$gray:                   $cl-bwn-pastel-greyish-dark-0;
+$gray-light:             $cl-bwn-pastel-greyish-dark-2;   // #999
+$gray-lighter:           $cl-bwn-pastel-greyish-dark-1; // #eee
 
-$brand-primary:         #7f5b37;
-$brand-success:         #00bc8c;
-$brand-info:            #3498DB;
-$brand-warning:         #F39C12;
-$brand-danger:          #E74C3C;
+$brand-primary:                   $cl-tan0;
+$brand-primary-color:             $cl-bwn-pastel-4;
+$brand-primary-border:            $brand-primary-color;
+
+$brand-primary-hover:             $cl-tan2;
+$brand-primary-hover-color:       $cl-bwn-pastel-3;
+$brand-primary-hover-border:      $brand-primary-hover-color;
+
+$brand-primary-focus:             $brand-primary-hover;
+$brand-primary-focus-color:       $brand-primary-hover-color;
+$brand-primary-focus-border:      $brand-primary-focus-color;
+
+$brand-primary-active:            $cl-tan-pastel-med-lite-1;
+$brand-primary-active-color:      $brand-primary-color;
+$brand-primary-active-border:     $brand-primary-active-color;
+
+$brand-primary-visited:           $brand-primary-active;
+$brand-primary-visited-color:     $brand-primary-active-color;
+$brand-primary-visited-border:    $brand-primary-visited-color;
+
+$brand-primary-disabled:          $cl-tan-pastel-med-lite-0;
+$brand-primary-disabled-color:    $brand-primary-visited-color;
+$brand-primary-disabled-border:   $brand-primary-disabled-color;
+
+
+$brand-success:                   $cl-green-pastel-0;
+$brand-success-color:             $cl-green-pastel-1;
+$brand-success-border:            $cl-blue-pastel-3;
+
+$brand-success-hover:             $cl-green-pastel-2;
+$brand-success-hover-color:       $cl-green-pastel-3;
+$brand-success-hover-border:      $brand-success-hover-color;
+
+$brand-success-focus:             $brand-success-hover;
+$brand-success-focus-color:       $brand-success-hover-color;
+$brand-success-focus-border:      $brand-success-hover-border;
+
+$brand-success-active:            $cl-green-pastel-3;
+$brand-success-active-color:      $cl-green-pastel-1;
+$brand-success-active-border:     $cl-green-pastel-2;
+
+$brand-success-visited:           $brand-success;
+$brand-success-visited-color:     $brand-success-color;
+$brand-success-visited-border:    $brand-success-border;
+
+$brand-success-disabled:          $cl-green-pastel-3;
+$brand-success-disabled-color:    $cl-green-pastel-0;
+$brand-success-disabled-border:   $brand-success-disabled;
+
+
+$brand-info:                      $cl-blue-pastel-0;
+$brand-info-color:                $cl-blue-pastel-1;
+$brand-info-border:               $cl-blue-pastel-3;
+
+$brand-info-hover:                $cl-blue-pastel-2;
+$brand-info-hover-color:          $cl-blue-pastel-3;
+$brand-info-hover-border:         $brand-info-hover-color;
+
+$brand-info-focus:                $brand-info-hover;
+$brand-info-focus-color:          $brand-info-hover-color;
+$brand-info-focus-border:         $brand-info-hover-border;
+
+$brand-info-active:               $cl-blue-pastel-3;
+$brand-info-active-color:         $cl-blue-pastel-1;
+$brand-info-active-border:        $cl-blue-pastel-2;
+
+$brand-info-visited:              $brand-info;
+$brand-info-visited-color:        $brand-info-color;
+$brand-info-visited-border:       $brand-info-border;
+
+$brand-info-disabled:             $cl-blue-pastel-3;
+$brand-info-disabled-color:       $cl-blue-pastel-0;
+$brand-info-disabled-border:      $brand-info-disabled;
+
+
+
+$brand-warning:                     $cl-yellow-pastel-0;
+$brand-warning-color:               $cl-yellow-pastel-1;
+$brand-warning-border:              $cl-yellow-pastel-3;
+
+$brand-warning-hover:               $cl-yellow-pastel-2;
+$brand-warning-hover-color:         $cl-yellow-pastel-3;
+$brand-warning-hover-border:        $brand-warning-hover-color;
+
+$brand-warning-focus:               $brand-warning-hover;
+$brand-warning-focus-color:         $brand-warning-hover-color;
+$brand-warning-focus-border:        $brand-warning-hover-border;
+
+$brand-warning-active:              $cl-yellow-pastel-3;
+$brand-warning-active-color:        $cl-yellow-pastel-1;
+$brand-warning-active-border:       $cl-yellow-pastel-2;
+
+$brand-warning-visited:             $brand-warning;
+$brand-warning-visited-color:       $brand-warning-color;
+$brand-warning-visited-border:      $brand-warning-border;
+
+$brand-warning-disabled:            $cl-yellow-pastel-3;
+$brand-warning-disabled-color:      $cl-yellow-pastel-0;
+$brand-warning-disabled-border:     $brand-warning-disabled;
+
+
+$brand-danger:                      $cl-red-pastel-0;
+$brand-danger-color:                $cl-red-pastel-1;
+$brand-danger-border:               $cl-red-pastel-3;
+
+$brand-danger-hover:                $cl-red-pastel-2;
+$brand-danger-hover-color:          $cl-red-pastel-3;
+$brand-danger-hover-border:         $brand-danger-hover-color;
+
+$brand-danger-focus:                $brand-danger-hover;
+$brand-danger-focus-color:          $brand-danger-hover-color;
+$brand-danger-focus-border:         $brand-danger-hover-border;
+
+$brand-danger-active:               $cl-red-pastel-3;
+$brand-danger-active-color:         $cl-red-pastel-1;
+$brand-danger-active-border:        $cl-red-pastel-2;
+
+$brand-danger-visited:              $brand-danger;
+$brand-danger-visited-color:        $brand-danger-color;
+$brand-danger-visited-border:       $brand-danger-border;
+
+$brand-danger-disabled:             $cl-red-pastel-3;
+$brand-danger-disabled-color:       $cl-red-pastel-0;
+$brand-danger-disabled-border:      $brand-danger-disabled;
+
 
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               $gray-darker;
+$body-bg:               $cl-bwn-pastel-0;
 //** Global text color on `<body>`.
-$text-color:            #fff;
+$text-color:            $cl-tan1;
 
 //** Global textual link color.
 $link-color:            desaturate(lighten($brand-success, 10%),10%);
@@ -46,7 +166,7 @@ $font-family-serif:       Georgia, "Times New Roman", Times, serif;
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family-base:        $font-family-sans-serif;
 
-$font-size-base:          15px;
+$font-size-base:          14px;
 $font-size-large:         ceil(($font-size-base * 1.25)); // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)); // ~12px
 
