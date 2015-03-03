@@ -8,5 +8,15 @@
     = csrf_meta_tags
 
   %body{class: (Rails.env.eql?("production") ? nil : "#{controller.controller_name} #{controller.action_name}")}
-    = render "shared/utilites/header/dashboard"
-    = yield
+    -if user_signed_in?
+      = render "shared/utilites/header/dashboard"
+    -else
+      = render "shared/utilites/header/welcome"
+.container
+  .row
+    .col-xs-12
+      .well.well-lg
+        = link_to "Back", :back, class: " btn btn-warning pull-right"
+        .row
+          .col-xs-12.col-sm-6
+            = yield

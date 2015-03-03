@@ -5,3 +5,31 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body {
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#myCarousel.carousel{
+  padding: 20px;
+}
+
+img.intro{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+}
+
+.carousel-caption{
+  top: 20px;
+  bottom: inherit;
+  background-color: RGBA(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+.carousel-caption:last-child{
+  top: inherit;
+  bottom: 20px;
+}
+
