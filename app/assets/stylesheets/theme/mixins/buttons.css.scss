@@ -80,6 +80,29 @@
     background-image: none;
     @include colors($active-bg, $active-border, $active-color);
   }
+  &:visited:hover,
+  &:visited.hover,
+  &.visited:hover,
+  &.visited.hover{
+    @include colors($hover-bg, $hover-border, $hover-color);
+    outline: none;
+  }
+  &:visited:focus,
+  &:visited.focus,
+  &.visited:focus,
+  &.visited.focus{
+    background-image: none;
+    outline: 5px auto rgba($focus-border,0.5);
+  }
+
+  &:visited:active,
+  &:visited.active,
+  &.visited:active,
+  &.visited.active{
+    background-image: none;
+    outline: 5px auto rgba($active-border,0.5);
+  }
+
   &:visited,
   &.visited {
     background-image: none;

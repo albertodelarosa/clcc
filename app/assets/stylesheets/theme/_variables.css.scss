@@ -13,8 +13,33 @@ $gray:                   $cl-bwn-pastel-greyish-dark-0;
 $gray-light:             $cl-bwn-pastel-greyish-dark-2;   // #999
 $gray-lighter:           $cl-bwn-pastel-greyish-dark-1; // #eee
 
+$brand-default:                   $cl-bwn-pastel-3;
+$brand-default-color:             $cl-tan0;
+$brand-default-border:            $brand-default-color;
+
+$brand-default-hover:             $cl-bwn-pastel-4;
+$brand-default-hover-color:       $cl-tan1;
+$brand-default-hover-border:      $brand-default-hover-color;
+
+$brand-default-focus:             $brand-default-hover;
+$brand-default-focus-color:       $brand-default-hover-color;
+$brand-default-focus-border:      $brand-default-focus-color;
+
+$brand-default-active:            $cl-bwn-pastel-3;
+$brand-default-active-color:      $brand-default-color;
+$brand-default-active-border:     $brand-default-active-color;
+
+$brand-default-visited:           $brand-default-active;
+$brand-default-visited-color:     $brand-default-active-color;
+$brand-default-visited-border:    $brand-default-visited-color;
+
+$brand-default-disabled:          $cl-bwn-pastel-0;
+$brand-default-disabled-color:    $brand-default-visited-color;
+$brand-default-disabled-border:   $brand-default-disabled-color;
+
+
 $brand-primary:                   $cl-tan0;
-$brand-primary-color:             $cl-bwn-pastel-4;
+$brand-primary-color:             $cl-bwn-pastel-3;
 $brand-primary-border:            $brand-primary-color;
 
 $brand-primary-hover:             $cl-tan2;
@@ -29,9 +54,9 @@ $brand-primary-active:            $cl-tan-pastel-med-lite-1;
 $brand-primary-active-color:      $brand-primary-color;
 $brand-primary-active-border:     $brand-primary-active-color;
 
-$brand-primary-visited:           $brand-primary-active;
-$brand-primary-visited-color:     $brand-primary-active-color;
-$brand-primary-visited-border:    $brand-primary-visited-color;
+$brand-primary-visited:           $brand-primary;
+$brand-primary-visited-color:     $brand-primary-color;
+$brand-primary-visited-border:    $brand-primary-border;
 
 $brand-primary-disabled:          $cl-tan-pastel-med-lite-0;
 $brand-primary-disabled-color:    $brand-primary-visited-color;
@@ -40,7 +65,7 @@ $brand-primary-disabled-border:   $brand-primary-disabled-color;
 
 $brand-success:                   $cl-green-pastel-0;
 $brand-success-color:             $cl-green-pastel-1;
-$brand-success-border:            $cl-blue-pastel-3;
+$brand-success-border:            $cl-green-pastel-3;
 
 $brand-success-hover:             $cl-green-pastel-2;
 $brand-success-hover-color:       $cl-green-pastel-3;
@@ -93,7 +118,7 @@ $brand-warning:                     $cl-yellow-pastel-0;
 $brand-warning-color:               $cl-yellow-pastel-1;
 $brand-warning-border:              $cl-yellow-pastel-3;
 
-$brand-warning-hover:               $cl-yellow-pastel-2;
+$brand-warning-hover:               $cl-yellow-pastel-4;
 $brand-warning-hover-color:         $cl-yellow-pastel-3;
 $brand-warning-hover-border:        $brand-warning-hover-color;
 
