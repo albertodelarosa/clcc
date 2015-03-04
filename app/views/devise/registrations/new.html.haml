@@ -1,21 +1,18 @@
-%h2 Sign up
+%h3 Register
 = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
   = devise_error_messages!
-  .field
-    = f.label :email
-    %br/
-    = f.email_field :email, autofocus: true
-  .field
-    = f.label :password
+  .form-group
+    = f.label :email, class: "sr-only"
+    = f.email_field :email, class: "form-control input-sm", placeholder: "email", autofocus: true
+  .form-group
+    = f.label :password, class: "sr-only"
+    = f.password_field :password, class: "form-control input-sm", placeholder: "password", autocomplete: "off"
     - if @validatable
-      %em
-        (#{@minimum_password_length} characters minimum)
-    %br/
-    = f.password_field :password, autocomplete: "off"
-  .field
-    = f.label :password_confirmation
-    %br/
-    = f.password_field :password_confirmation, autocomplete: "off"
-  .actions
-    = f.submit "Sign up"
+      .small
+        %i (#{@minimum_password_length} characters minimum)
+  .form-group
+    = f.label :password_confirmation, class: "sr-only"
+    = f.password_field :password_confirmation, class: "form-control input-sm", placeholder: "confirm password", autocomplete: "off"
+  .form-group
+    %input#sign-in.btn.btn-primary.btn-block{:type => "submit", :value => "register"}
 = render "devise/shared/links"

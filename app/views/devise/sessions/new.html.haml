@@ -1,17 +1,15 @@
-%h2 Log in
+%h3 sign in
 = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
-  .field
-    = f.label :email
-    %br/
-    = f.email_field :email, autofocus: true
-  .field
-    = f.label :password
-    %br/
-    = f.password_field :password, autocomplete: "off"
+  .form-group
+    = f.label :email, class: "sr-only"
+    = f.email_field :email, class: "form-control input-sm", placeholder: "email", autofocus: true
+  .form-group
+    = f.label :password, class: "sr-only"
+    = f.password_field :password, class: "form-control input-sm", placeholder: "password", autocomplete: "off"
   - if devise_mapping.rememberable?
-    .field
+    .form-group
       = f.check_box :remember_me
       = f.label :remember_me
-  .actions
-    = f.submit "Log in"
+  .form-group
+    %input#sign-in.btn.btn-primary.btn-block{:type => "submit", :value => "sign in"}
 = render "devise/shared/links"

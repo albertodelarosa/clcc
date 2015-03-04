@@ -16,7 +16,21 @@
   .row
     .col-xs-12
       .well.well-lg
-        = link_to "Back", :back, class: " btn btn-warning pull-right"
         .row
-          .col-xs-12.col-sm-6
-            = yield
+          - if devise_mapping.omniauthable?
+            .col-xs-12.col-sm-6
+              .visible-xs-block
+                = link_to "Back", :back, class: " btn btn-warning pull-right"
+              = yield
+            .col-xs-12.col-sm-1
+              .h3.text-center
+                = "or"
+            .col-xs-12.col-sm-5
+              .hidden-xs
+                = link_to "Back", :back, class: " btn btn-warning pull-right"
+              = render "devise/shared/social_links"
+          - else
+            .col-xs-12
+              = link_to "Back", :back, class: " btn btn-warning pull-right"
+              = yield
+
